@@ -97,18 +97,7 @@ const Contact = () => {
                 placeholder="Type your message here."
               />
               {/* Button */}
-              <Button
-                size="md"
-                className="max-w-40"
-                onClick={() => {
-                  const phoneNumber = "62859106998325"; // Ganti dengan nomor WhatsApp Anda
-                  const message = "Halo saya ingin bekerja sama dengan Anda."; // Pesan default
-                  const url = `https://wa.me/${62859106998325}?text=${encodeURIComponent(
-                    message
-                  )}`;
-                  window.open(url, "_blank"); // Membuka WhatsApp di tab baru
-                }}
-              >
+              <Button size="md" className="max-w-40">
                 Send message
               </Button>
             </form>
